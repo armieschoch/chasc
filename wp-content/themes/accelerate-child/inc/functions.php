@@ -522,11 +522,11 @@ if ( ! function_exists( 'accelerate_footer_copyright' ) ) :
 function accelerate_footer_copyright() {
 	$site_link = '<a href="' . esc_url( home_url( '/' ) ) . '" title="' . esc_attr( get_bloginfo( 'name', 'display' ) ) . '" ><span>' . get_bloginfo( 'name', 'display' ) . '</span></a>';
 
-	$wp_link = '<a href="'.esc_url( 'http://wordpress.org' ).'" target="_blank" title="' . esc_attr__( 'WordPress', 'accelerate' ) . '"><span>' . __( 'WordPress', 'accelerate' ) . '</span></a>';
+	$wp_link = '<a href="'.esc_url( 'http://restwebsolutions.com' ).'" target="_blank" title="' . esc_attr__( 'Rest web Solutions', 'accelerate' ) . '"><span>' . __( 'Rest web Solutions', 'accelerate' ) . '</span></a>';
 
-	$tg_link =  '<a href="'.esc_url( 'https://themegrill.com/themes/accelerate' ).'" target="_blank" title="'.esc_attr__( 'ThemeGrill', 'accelerate' ).'" rel="designer"><span>'.__( 'ThemeGrill', 'accelerate') .'</span></a>';
+	// $tg_link =  '<a href="'.esc_url( 'https://themegrill.com/themes/accelerate' ).'" target="_blank" title="'.esc_attr__( 'ThemeGrill', 'accelerate' ).'" rel="designer"><span>'.__( 'ThemeGrill', 'accelerate') .'</span></a>';
 
-	$default_footer_value = sprintf( __( 'Copyright &copy; %1$s %2$s.', 'accelerate' ), date( 'Y' ), $site_link ).' '.sprintf( __( 'Powered by %s.', 'accelerate' ), $wp_link ).' '.sprintf( __( 'Theme: %1$s by %2$s.', 'accelerate' ), 'Accelerate', $tg_link );
+	$default_footer_value = sprintf( __( 'Copyright &copy; %1$s %2$s.', 'accelerate' ), date( 'Y' ), $site_link );
 
 	$accelerate_footer_copyright = '<div class="copyright">'.$default_footer_value.'</div>';
 	echo $accelerate_footer_copyright;
